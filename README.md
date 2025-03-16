@@ -1,2 +1,2 @@
 # portfolio-html
-📑 portfolio-html - portifólio pessoal
+📑 portfolio-html - portfólio pessoal no estilo gruvbox
