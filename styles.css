@@ -9,7 +9,7 @@
     --accent1: #fb4934;   /* Vermelho */
     --accent2: #b8bb26;   /* Verdes */
     --hover: #fe8019;     /* Laranja */
-    --extra1: #83a598;    /* Aqua */
+    --extra1: #83a598;    /* Turquesa */
     --extra2: #d3869b;    /* Rosa/roxo */
     --extra3: #458588;    /* Azul */
 }
@@ -18,21 +18,22 @@
 body {
     background-color: var(--bg);
     color: var(--fg);
-    font-family: 'Cascadia Code', monospace;
+    font-family: 'Cascadia Code', 'Courier New', monospace;
     font-size: 1.1rem;
     margin: 0;
     padding: 0;
     line-height: 1.5;
 }
 
-/* Cabeçalho e navegação */
+/* Cabeçalho */
 header {
     background-color: var(--bg);
     border-bottom: 2px solid var(--accent2);
     padding: 1rem;
 }
 
-.nav-bar ul {
+/* Navegação */
+.navegação ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -41,7 +42,7 @@ header {
     gap: 2rem;
 }
 
-.nav-bar a {
+.navegação a {
     color: var(--highlight);
     text-decoration: none;
     text-transform: uppercase;
@@ -50,65 +51,67 @@ header {
     transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-.nav-bar a:hover {
+.navegação a:hover {
     color: var(--hover);
     background-color: var(--extra2); /* Rosa/roxo claro no hover */
     border-radius: 4px;
 }
 
 /* Conteúdo principal */
-.content {
+.conteúdo {
     max-width: 900px;
     margin: 0 auto;
     padding: 2rem;
-    border: 1px solid var(--extra1); /* Aqua nas bordas */
+    border: 1px solid var(--extra1); /* Turquesa nas bordas */
     background-color: var(--bg);
 }
 
-/* Seção Hero */
-.hero {
+/* Seção de subtítulo*/
+.principal {
     text-align: center;
     padding: 3rem 0;
     border-bottom: 1px dashed var(--extra3); /* Azul escuro na linha */
 }
 
-.hero h1 {
+/* Título */
+.principal h1 {
     color: var(--accent1); /* Vermelho queimado */
     font-size: 2.2rem;
     text-transform: uppercase;
     margin-bottom: 0.5rem;
 }
 
-.hero p {
-    color: var(--extra1); /* Aqua no subtítulo */
+/* Subtítulo */
+.principal p {
+    color: var(--extra1); /* Turquesa no subtítulo */
     font-size: 1.2rem;
 }
 
-/* Seção Intro */
-.intro {
+/* Seção de introdução */
+.introdução {
     padding: 1.5rem;
     border: 1px dashed var(--highlight); /* Amarelo nas bordas */
     margin: 1rem 0;
     background-color: rgba(40, 42, 46, 0.3); /* Leve tom escuro para contraste */
 }
 
-.intro h2 {
+.introdução h2 {
     color: var(--extra2); /* Rosa/roxo claro no título */
     font-size: 1.6rem;
     margin-bottom: 1rem;
 }
 
-.intro p {
+.introdução p {
     margin: 0.8rem 0;
 }
 
-/* Seção CTA */
-.cta {
+/* Seção de explorar */
+.explorar {
     text-align: center;
     padding: 2rem 0;
 }
 
-.cta p {
+.explorar p {
     color: var(--highlight); /* Amarelo no texto */
     font-size: 1.2rem;
     border: 1px solid var(--extra3); /* Azul escuro na borda */
@@ -117,7 +120,7 @@ header {
 }
 
 /* Destaques */
-.highlight {
+.destaque {
     color: var(--highlight); /* Amarelo */
     font-weight: bold;
 }
@@ -132,23 +135,70 @@ footer {
     font-size: 1rem;
 }
 
+/* Redes */
+.redes {
+    gap: 1rem;
+}
+
+.redes a {
+    color: var(--highlight); /* Amarelo para os ícones */
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.redes a:hover {
+    color: var(--hover); /* Laranja no hover */
+    transform: scale(1.2); /* Leve aumento no hover */
+}
+
+/* Certificados */
+.certificado-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.certificado-link {
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.certificado-link:hover {
+    transform: scale(1.05); /* Leve aumento no hover */
+}
+
+.certificado-imagem {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 2px solid var(--highlight); /* Borda amarela */
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.certificado-texto p {
+    margin: 0;
+}
+
 /* Responsividade */
 @media (max-width: 600px) {
-    .nav-bar ul {
+    .navegação ul {
         flex-direction: column;
         text-align: center;
         gap: 1rem;
     }
 
-    .hero h1 {
+    .principal h1 {
         font-size: 1.8rem;
     }
 
-    .intro h2 {
+    .introdução h2 {
         font-size: 1.4rem;
     }
 
-    .content {
+    .conteúdo {
         padding: 1rem;
     }
 }
