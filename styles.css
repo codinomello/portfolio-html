@@ -135,6 +135,14 @@ footer {
     font-size: 1rem;
 }
 
+/* Foto */
+.foto {
+    width: 400px;
+    height: 400px;
+    border: 3px dashed var(--highlight); /* Amarelo nas bordas */
+    border-radius: 20px;
+}
+
 /* Redes */
 .redes {
     gap: 1rem;
