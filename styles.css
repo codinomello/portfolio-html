@@ -1,7 +1,7 @@
 /* Importação da fonte Cascadia Code */
 @import url('https://fonts.cdnfonts.com/css/cascadia-code');
 
-/* Variáveis de cores do tema Gruvbox Dark Hard */
+/* Variáveis de cores do tema Gruvbox */
 :root {
     --bg: #1d2021;        /* Fundo escuro */
     --fg: #d5c4a1;        /* Bege claro */
@@ -180,25 +180,4 @@ footer {
 
 .certificado-texto p {
     margin: 0;
-}
-
-/* Responsividade */
-@media (max-width: 600px) {
-    .navegação ul {
-        flex-direction: column;
-        text-align: center;
-        gap: 1rem;
-    }
-
-    .principal h1 {
-        font-size: 1.8rem;
-    }
-
-    .introdução h2 {
-        font-size: 1.4rem;
-    }
-
-    .conteúdo {
-        padding: 1rem;
-    }
 }
